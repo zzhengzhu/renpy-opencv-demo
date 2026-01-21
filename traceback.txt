@@ -1,0 +1,40 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 20, in script call
+    call check_mood
+  File "game/script.rpy", line 259, in script
+    $ result = run_fer_helper_once()
+  File "game/script.rpy", line 259, in <module>
+    $ result = run_fer_helper_once()
+               ~~~~~~~~~~~~~~~~~~~^^
+  File "game/fer_integration.rpy", line 7, in run_fer_helper_once
+    renpy.log("Temp dir: " + tempfile.gettempdir())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 20, in script call
+    call check_mood
+  File "game/script.rpy", line 259, in script
+    $ result = run_fer_helper_once()
+  File "renpy/ast.py", line 1187, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1273, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/script.rpy", line 259, in <module>
+    $ result = run_fer_helper_once()
+               ~~~~~~~~~~~~~~~~~~~^^
+  File "game/fer_integration.rpy", line 7, in run_fer_helper_once
+    renpy.log("Temp dir: " + tempfile.gettempdir())
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+
+macOS-14.6.1-arm64-arm-64bit arm64
+Ren'Py 8.5.0.25111603
+The Question 7.0
+Thu Jan 15 00:34:20 2026

@@ -1,0 +1,48 @@
+####################################
+# Ren'Py generated / runtime files #
+####################################
+
+# Compiled scripts
+*.rpyc
+*.rpymc
+
+# Save data
+saves/
+persistent/
+
+# Cache / logs
+cache/
+log.txt
+errors.txt
+
+# Platform-specific builds
+android/
+ios/
+web/
+linux-i686/
+linux-x86_64/
+windows/
+mac/
+
+# Build artifacts
+build/
+dist/
+dists/
+
+# Ren'Py SDK temporary files
+tmp/
+renpy/tmp/
+
+####################################
+# Assets / tooling artifacts       #
+####################################
+
+# Image/audio export caches
+*.bak
+*.psd~
+*.kra~
+*.aseprite~
+
+#helper
+helper/outputs/
+helper/fer_helper/
