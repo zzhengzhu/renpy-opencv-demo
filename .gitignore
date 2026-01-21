@@ -44,5 +44,5 @@ renpy/tmp/
 *.aseprite~
 
 #helper
-helper/outputs/
-helper/fer_helper/
+game/helper/outputs/
+game/helper/fer_helper/
